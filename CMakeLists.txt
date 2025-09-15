@@ -6,4 +6,7 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(LeetCode main.cpp
         "Dynamic Programming/300 - Longest Increasing Subsequence/Solution.cpp"
         "Dynamic Programming/300 - Longest Increasing Subsequence/Solution.h"
+        "Linked LIst/141 - Linked List Cycle/Solution.cpp"
+        "Linked LIst/141 - Linked List Cycle/Solution.h"
+        "Linked LIst/ListNode.h"
 )
