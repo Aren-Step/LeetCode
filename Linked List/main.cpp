@@ -1,38 +1,67 @@
 #include <iostream>
 using namespace std;
 
-// #include "Linked List/ListNode.h"
-// #include "Linked List/2 - Add Two Numbers/Solution.h"
+// #include "2 - Add Two Numbers/Solution.h"
 // #include "21 - Merge Two Sorted Lists/Solution.h"
 // #include "83 - Remove Duplicates from Sorted List/Solution.h"
-#include "2 - Add Two Numbers/Solution.h"
-int main() {
-    ListNode* list1 = new ListNode(1);
-    ListNode* node2 = new ListNode(7);
-    ListNode* node3 = new ListNode(4);
-    list1->next = node2;
-    node2->next = node3;
+// #include "141 - Linked List Cycle/Solution.h"
+#include "160 - Intersection of Two Linked Lists/Solution.h"
 
-    ListNode* list2 = new ListNode(1);
-    ListNode* node4 = new ListNode(5);
-    ListNode* node5 = new ListNode(3);
-    list2->next = node4;
-    node4->next = node5;
-    
-    const ListNode* result = Solution::addTwoNumbers(list1, list2);
+int main() {
+    ListNode *head1 = nullptr, *curr1 = nullptr;
+    ListNode *head2 = nullptr, *curr2 = nullptr;
+
+    int n1, n2;
+    cout << "Number of nodes for list1 and list2: ";
+    cin >> n1 >> n2;
+
+    cout << "Enter " << n1 << " values for first list:" << endl;
+    for (int i = 0; i < n1; i++) {
+        int value;
+        cin >> value;
+        if (!head1) {
+            head1 = new ListNode(value);
+            curr1 = head1;
+        } else {
+            curr1->next = new ListNode(value);
+            curr1 = curr1->next;
+        }
+    }
+
+    cout << "Enter " << n2 << " values for second list:" << endl;
+    for (int i = 0; i < n2; i++) {
+        int value;
+        cin >> value;
+        if (!head2) {
+            head2 = new ListNode(value);
+            curr2 = head2;
+        } else {
+            curr2->next = new ListNode(value);
+            curr2 = curr2->next;
+        }
+    }
+
+    // Solution function
+    const ListNode *result = Solution::getIntersectionNode(head1, head2);
     while (result) {
         cout << result->val << " ";
         result = result->next;
     }
     cout << endl;
-    
-    delete list1;
-    delete list2;
-    delete node2;
-    delete node3;
-    delete node4;
-    delete node5;
-    delete result;
-    
+
+    // Clean up first list
+    while (head1) {
+        ListNode *temp = head1;
+        head1 = head1->next;
+        delete temp;
+    }
+
+    // Clean up second list
+    while (head2) {
+        ListNode *temp = head2;
+        head2 = head2->next;
+        delete temp;
+    }
+
     return 0;
 }
