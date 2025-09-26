@@ -5,17 +5,19 @@ using namespace std;
 // #include "21 - Merge Two Sorted Lists/Solution.h"
 // #include "83 - Remove Duplicates from Sorted List/Solution.h"
 // #include "141 - Linked List Cycle/Solution.h"
-#include "160 - Intersection of Two Linked Lists/Solution.h"
+// #include "160 - Intersection of Two Linked Lists/Solution.h"
+#include "203 - Remove Linked List Elements/Solution.h"
 
 int main() {
     ListNode *head1 = nullptr, *curr1 = nullptr;
     ListNode *head2 = nullptr, *curr2 = nullptr;
 
     int n1, n2;
-    cout << "Number of nodes for list1 and list2: ";
-    cin >> n1 >> n2;
+    cout << "Number of nodes for ";
+    cout << "list1 ";   cin >> n1;
+    // cout << "list2 ";   cin >> n2;
 
-    cout << "Enter " << n1 << " values for first list:" << endl;
+    cout << "Enter " << n1 << " values for list1:" << endl;
     for (int i = 0; i < n1; i++) {
         int value;
         cin >> value;
@@ -28,7 +30,7 @@ int main() {
         }
     }
 
-    cout << "Enter " << n2 << " values for second list:" << endl;
+    /*cout << "Enter " << n2 << " values for list2:" << endl;
     for (int i = 0; i < n2; i++) {
         int value;
         cin >> value;
@@ -39,10 +41,10 @@ int main() {
             curr2->next = new ListNode(value);
             curr2 = curr2->next;
         }
-    }
+    }*/
 
     // Solution function
-    const ListNode *result = Solution::getIntersectionNode(head1, head2);
+    const ListNode *result = Solution::removeElements(head1, 5);
     while (result) {
         cout << result->val << " ";
         result = result->next;
