@@ -1,9 +1,10 @@
 //
-// Created by Admin on 9/15/2025.
+// Created by Admin on 9/26/2025.
 //
 
 #ifndef LEETCODE_SOLUTION_H
 #define LEETCODE_SOLUTION_H
+
 #include "../ListNode.h"
 
 class Solution {
@@ -24,6 +25,5 @@ public:
         return false;
     }
 };
-
 
 #endif //LEETCODE_SOLUTION_H

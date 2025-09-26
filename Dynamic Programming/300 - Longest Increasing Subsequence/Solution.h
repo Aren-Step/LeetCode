@@ -1,12 +1,12 @@
 //
-// Created by Admin on 9/13/2025.
+// Created by Admin on 9/26/2025.
 //
 
 #ifndef LEETCODE_SOLUTION_H
 #define LEETCODE_SOLUTION_H
+
 #include <vector>
 using namespace std;
-
 
 class Solution {
 public:
@@ -26,6 +26,5 @@ public:
         return maxLen;
     }
 };
-
 
 #endif //LEETCODE_SOLUTION_H
