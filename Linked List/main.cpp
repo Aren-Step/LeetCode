@@ -6,7 +6,8 @@ using namespace std;
 // #include "83 - Remove Duplicates from Sorted List/Solution.h"
 // #include "141 - Linked List Cycle/Solution.h"
 // #include "160 - Intersection of Two Linked Lists/Solution.h"
-#include "203 - Remove Linked List Elements/Solution.h"
+// #include "203 - Remove Linked List Elements/Solution.h"
+#include "206 - Reverse Linked List/Solution.h"
 
 int main() {
     ListNode *head1 = nullptr, *curr1 = nullptr;
@@ -44,7 +45,7 @@ int main() {
     }*/
 
     // Solution function
-    const ListNode *result = Solution::removeElements(head1, 5);
+    const ListNode *result = Solution::reverseList(head1);
     while (result) {
         cout << result->val << " ";
         result = result->next;
