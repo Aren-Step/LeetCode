@@ -12,6 +12,7 @@ add_executable(Linked-List "Linked List/main.cpp"
         "Linked List/160 - Intersection of Two Linked Lists/Solution.h"
         "Linked List/203 - Remove Linked List Elements/Solution.h"
         "Linked List/206 - Reverse Linked List/Solution.h"
+        "Linked List/234 - Palindrome Linked List/Solution.h"
 )
 
 add_executable(Dynamic-Programming "Dynamic Programming/main.cpp"
