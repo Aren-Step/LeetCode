@@ -1,3 +1,4 @@
+#include <bitset>
 #include <iostream>
 using namespace std;
 
@@ -9,7 +10,8 @@ using namespace std;
 // #include "203 - Remove Linked List Elements/Solution.h"
 // #include "206 - Reverse Linked List/Solution.h"
 // #include "234 - Palindrome Linked List/Solution.h"
-#include "876 - Middle of the Linked List/Solution.h"
+// #include "876 - Middle of the Linked List/Solution.h"
+#include "1290 - Convert Binary Number in a Linked List to Integer/Solution.h"
 
 int main() {
     ListNode *head1 = nullptr, *curr1 = nullptr;
@@ -47,13 +49,14 @@ int main() {
     }*/
 
     // Solution function
-    const ListNode *result = Solution::middleNode(head1);
+    // const ListNode *result = Solution::middleNode(head1);
+    cout << bitset<8>(Solution::getDecimalValue(head1)) << " " << Solution::getDecimalValue(head1) << endl;
 
-    while (result) {
+    /*while (result) {
         cout << result->val << " ";
         result = result->next;
     }
-    cout << endl;
+    cout << endl;*/
 
     // Clean up first list
     while (head1) {
