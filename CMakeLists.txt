@@ -15,6 +15,7 @@ add_executable(Linked-List "Linked List/main.cpp"
         "Linked List/234 - Palindrome Linked List/Solution.h"
         "Linked List/876 - Middle of the Linked List/Solution.h"
         "Linked List/1290 - Convert Binary Number in a Linked List to Integer/Solution.h"
+        "Linked List/142 - Linked List Cycle II/Solution.h"
 )
 
 add_executable(Dynamic-Programming "Dynamic Programming/main.cpp"
