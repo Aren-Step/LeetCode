@@ -4,6 +4,10 @@
 
 #include <iostream>
 using namespace std;
+
+#include "20 - Valid Parentheses/Solution.h"
+#include "150 - Evaluate Reverse Polish Notation/Solution.h"
+
 int main() {
 
 
