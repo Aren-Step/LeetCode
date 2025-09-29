@@ -20,3 +20,6 @@ add_executable(Linked-List "Linked List/main.cpp"
 add_executable(Dynamic-Programming "Dynamic Programming/main.cpp"
         "Dynamic Programming/300 - Longest Increasing Subsequence/Solution.h"
 )
+add_executable(Stack Stack/main.cpp
+        "Stack/20 - Valid Parentheses/Solution.h"
+        "Stack/150 - Evaluate Reverse Polish Notation/Solution.h")
