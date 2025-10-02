@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-// #include "2 - Add Two Numbers/Solution.h"
+#include "2 - Add Two Numbers/Solution.h"
 // #include "21 - Merge Two Sorted Lists/Solution.h"
 // #include "83 - Remove Duplicates from Sorted List/Solution.h"
 // #include "141 - Linked List Cycle/Solution.h"
@@ -11,16 +11,16 @@ using namespace std;
 // #include "206 - Reverse Linked List/Solution.h"
 // #include "234 - Palindrome Linked List/Solution.h"
 // #include "876 - Middle of the Linked List/Solution.h"
-#include "1290 - Convert Binary Number in a Linked List to Integer/Solution.h"
+// #include "1290 - Convert Binary Number in a Linked List to Integer/Solution.h"
 
 int main() {
     ListNode *head1 = nullptr, *curr1 = nullptr;
     ListNode *head2 = nullptr, *curr2 = nullptr;
 
     int n1, n2;
-    cout << "Number of nodes for ";
-    cout << "list1 ";   cin >> n1;
-    // cout << "list2 ";   cin >> n2;
+    cout << "Number of nodes for\n";
+    cout << "list1: ";   cin >> n1;
+    cout << "list2: ";   cin >> n2;
 
     cout << "Enter " << n1 << " values for list1:" << endl;
     for (int i = 0; i < n1; i++) {
@@ -35,7 +35,7 @@ int main() {
         }
     }
 
-    /*cout << "Enter " << n2 << " values for list2:" << endl;
+    cout << "Enter " << n2 << " values for list2:" << endl;
     for (int i = 0; i < n2; i++) {
         int value;
         cin >> value;
@@ -46,17 +46,17 @@ int main() {
             curr2->next = new ListNode(value);
             curr2 = curr2->next;
         }
-    }*/
+    }
 
     // Solution function
-    // const ListNode *result = Solution::middleNode(head1);
-    cout << bitset<8>(Solution::getDecimalValue(head1)) << " " << Solution::getDecimalValue(head1) << endl;
+    const ListNode *result = Solution::addTwoNumbers(head1, head2);
+    //cout << bitset<8>(Solution::getDecimalValue(head1)) << " " << Solution::getDecimalValue(head1) << endl;
 
-    /*while (result) {
+    while (result) {
         cout << result->val << " ";
         result = result->next;
     }
-    cout << endl;*/
+    cout << endl;
 
     // Clean up first list
     while (head1) {
