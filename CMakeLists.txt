@@ -23,6 +23,7 @@ add_executable(Dynamic-Programming "Dynamic Programming/main.cpp"
 )
 add_executable(Stack Stack/main.cpp
         "Stack/20 - Valid Parentheses/Solution.h"
+        "Stack/71 - Simplify Path/Solution.h"
         "Stack/150 - Evaluate Reverse Polish Notation/Solution.h"
         "Stack/232 - Implement Queue using Stacks/Solution.h"
         "Stack/682 - Baseball Game/Solution.h")
