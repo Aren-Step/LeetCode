@@ -13,12 +13,19 @@ using namespace std;
 // #include "682 - Baseball Game/Solution.h"
 // #include "71 - Simplify Path/Solution.h"
 // #include "155 - Min Stack/Solution.h"
-#include "1047 - Remove All Adjacent Duplicates In String/Solution.h"
+// #include "1047 - Remove All Adjacent Duplicates In String/Solution.h"
+#include "1475 - Final Prices With a Special Discount in a Shop/Solution.h"
 
 int main() {
-    const string s = "abbac";
-    cout << "Initial string: " << s << endl;
-    cout << "without duplicates: " << Solution::removeDuplicates(s) << endl;
+    vector<int> prices = {8,4,6,2,3};
+    for (int i = 0; i < prices.size(); i++) {
+        cout << prices[i] << " ";
+    }
+    cout << endl;
+    vector<int> finals = Solution::finalPrices(prices);
+    for (int i = 0; i < finals.size(); i++) {
+        cout << finals[i] << " ";
+    }
 
     return 0;
 }
