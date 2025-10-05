@@ -15,11 +15,12 @@ using namespace std;
 // #include "155 - Min Stack/Solution.h"
 // #include "1047 - Remove All Adjacent Duplicates In String/Solution.h"
 // #include "1475 - Final Prices With a Special Discount in a Shop/Solution.h"
-#include "2696 - Minimum String Length After Removing Substrings/Solution.h"
+// #include "2696 - Minimum String Length After Removing Substrings/Solution.h"
+#include "3174 - Clear Digits/Solution.h"
 
 int main() {
-    string s = "ABFCACDB";
-    cout << Solution::minLength(s) << endl;
+    string s = "ab7c5jhu4ui873o";
+    cout << Solution::clearDigits(s) << endl;
 
     return 0;
 }
