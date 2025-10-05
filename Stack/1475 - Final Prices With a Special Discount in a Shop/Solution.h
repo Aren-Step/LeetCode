@@ -5,7 +5,6 @@
 #ifndef LEETCODE_SOLUTION_H
 #define LEETCODE_SOLUTION_H
 
-#include <stack>
 #include <vector>
 using namespace std;
 

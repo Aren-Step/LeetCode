@@ -29,4 +29,5 @@ add_executable(Stack Stack/main.cpp
         "Stack/232 - Implement Queue using Stacks/Solution.h"
         "Stack/682 - Baseball Game/Solution.h"
         "Stack/1047 - Remove All Adjacent Duplicates In String/Solution.h"
-        "Stack/1475 - Final Prices With a Special Discount in a Shop/Solution.h")
+        "Stack/1475 - Final Prices With a Special Discount in a Shop/Solution.h"
+        "Stack/2696 - Minimum String Length After Removing Substrings/Solution.h")
