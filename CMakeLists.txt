@@ -28,7 +28,13 @@ add_executable(Stack Stack/main.cpp
         "Stack/155 - Min Stack/Solution.h"
         "Stack/232 - Implement Queue using Stacks/Solution.h"
         "Stack/682 - Baseball Game/Solution.h"
+        "Stack/739 - Daily Temperatures/Solution.h"
         "Stack/1047 - Remove All Adjacent Duplicates In String/Solution.h"
         "Stack/1475 - Final Prices With a Special Discount in a Shop/Solution.h"
         "Stack/2696 - Minimum String Length After Removing Substrings/Solution.h"
-        "Stack/3174 - Clear Digits/Solution.h")
+        "Stack/3174 - Clear Digits/Solution.h"
+)
+add_executable(Queue Queue/main.cpp
+        "Queue/622 - Design Circular Queue/Solution.h")
+add_executable(Array Array/main.cpp
+        "Array/733 - Flood Fill/Solution.h")
