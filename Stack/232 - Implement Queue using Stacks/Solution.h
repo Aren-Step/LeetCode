@@ -6,6 +6,7 @@
 #define LEETCODE_SOLUTION_H
 
 #include <stack>
+using namespace std;
 
 class MyQueue {
 public:
@@ -25,7 +26,7 @@ public:
 
     int peek() {
         if (dequeueStack.empty()) {
-            while (!(enqueueStack.empty())) {
+            while (!enqueueStack.empty()) {
                 dequeueStack.push(enqueueStack.top());
                 enqueueStack.pop();
             }
