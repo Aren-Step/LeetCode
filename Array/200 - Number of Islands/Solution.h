@@ -13,8 +13,8 @@ class Solution {
 public:
     static void countIsland(vector<vector<char> > grid, vector<vector<int> > &visited, int i, int j) {
         queue<pair<int, int> > q;
-        int dir_i[] = {0, 0, 1, -1};
-        int dir_j[] = {1, -1, 0, 0};
+        int dir_i[] = {-1, 0, 1, 0};
+        int dir_j[] = {0, 1, 0, -1};
         visited[i][j] = 1;
         q.push({i, j});
         while (!q.empty()) {
