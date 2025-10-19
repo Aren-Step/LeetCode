@@ -9,7 +9,8 @@
 #include <iostream>
 using namespace std;
 
-static void PrintMatrix(const vector<vector<int>> matrix) {
+template<typename T>
+static void PrintMatrix(const vector<vector<T>> matrix) {
     const int n = matrix.size(), m = matrix[0].size();
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {

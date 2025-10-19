@@ -42,4 +42,5 @@ add_executable(Array Array/main.cpp
         "Array/463 - Island Perimeter/Solution.h"
         "Array/200 - Number of Islands/Solution.h"
         "Array/542 - 01 Matrix/Solution.h"
-        Array/PrintMatrix.h)
+        Array/PrintMatrix.h
+        "Array/130 - Surrounded Regions/Solution.h")
