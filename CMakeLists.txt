@@ -44,4 +44,5 @@ add_executable(Array Array/main.cpp
         "Array/542 - 01 Matrix/Solution.h"
         Array/PrintMatrix.h
         "Array/130 - Surrounded Regions/Solution.h"
-        "Array/1254 - Number of Closed Islands/Solution.h")
+        "Array/1254 - Number of Closed Islands/Solution.h"
+        "Array/1020 - Number of Enclaves/Solution.h")

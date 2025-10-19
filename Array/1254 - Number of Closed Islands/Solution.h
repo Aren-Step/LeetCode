@@ -11,7 +11,7 @@ using namespace std;
 
 class Solution {
 public:
-    bool isIslandClosed(vector<vector<int>>& grid, int x, int y) {
+    bool isLandEnclave(vector<vector<int>>& grid, int x, int y) {
         queue<pair<int, int>> q;
         q.push({x, y});
         grid[x][y] = 1;
@@ -42,11 +42,11 @@ public:
         }
         return isClosed;
     }
-    int closedIsland(vector<vector<int>>& grid) {
+    int numEnclaves(vector<vector<int>>& grid) {
         int count = 0;
         for (int i = 0; i < grid.size(); i++) {
             for (int j = 0; j < grid[0].size(); j++) {
-                if (grid[i][j] == 0 && isIslandClosed(grid, i, j)) {
+                if (grid[i][j] == 0 && isLandEnclave(grid, i, j)) {
                     count++;
                 }
             }
