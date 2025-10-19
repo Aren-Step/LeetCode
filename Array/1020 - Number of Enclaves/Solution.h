@@ -20,7 +20,7 @@ public:
             for(int j = 0; j < m; j++) {
                 if(grid[i][j] == 1 && (i == 0 || i == n - 1 || j == 0 || j == m - 1)) {
                     q.push({i, j});
-                    visited[i][j]++;
+                    visited[i][j] = 1;
                 }
             }
         }
