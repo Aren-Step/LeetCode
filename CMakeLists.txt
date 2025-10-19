@@ -40,4 +40,6 @@ add_executable(Queue Queue/main.cpp
 add_executable(Array Array/main.cpp
         "Array/733 - Flood Fill/Solution.h"
         "Array/463 - Island Perimeter/Solution.h"
-        "Array/200 - Number of Islands/Solution.h")
+        "Array/200 - Number of Islands/Solution.h"
+        "Array/542 - 01 Matrix/Solution.h"
+        Array/PrintMatrix.h)

@@ -6,18 +6,20 @@
 #include <vector>
 using namespace std;
 
-#include "733 - Flood Fill/Solution.h"
+// #include "733 - Flood Fill/Solution.h"
+#include "542 - 01 Matrix/Solution.h"
 
 int main() {
-    vector<vector<int>> image = {{1, 1, 0}, {0, 1, 0}, {1, 1, 1}};
-    int sr = 1, sc = 1, color = 1;
-    vector<vector<int>> result = Solution::floodFill(image, sr, sc, color);
-    for (int i = 0; i < result.size(); i++) {
-        for (int j = 0; j < result[0].size(); j++) {
-            cout << result[i][j] << " ";
-        }
-        cout << endl;
-    }
+    vector<vector<int>> matrix = {
+        {0, 0, 1, 0},
+        {1, 1, 0, 0},
+        {1, 1, 1, 1},
+        {1, 0, 0, 1}
+    };
+
+    vector<vector<int>> result = Solution::updateMatrix(matrix);
+    cout << "\nFinal result:\n";
+    PrintMatrix(result);
 
     return 0;
 }
