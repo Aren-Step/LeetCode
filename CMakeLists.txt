@@ -38,4 +38,5 @@ add_executable(Queue Queue/main.cpp
         "Queue/622 - Design Circular Queue/Solution.h")
 add_executable(Array Array/main.cpp
         "Array/733 - Flood Fill/Solution.h"
-        "Array/463 - Island Perimeter/Solution.h")
+        "Array/463 - Island Perimeter/Solution.h"
+        "Array/200 - Number of Islands/Solution.h")
