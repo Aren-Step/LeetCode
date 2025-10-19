@@ -5,64 +5,63 @@
 #ifndef LEETCODE_SOLUTION_H
 #define LEETCODE_SOLUTION_H
 
+#include <vector>
+using namespace std;
+
 class MyCircularQueue {
 public:
     MyCircularQueue(int k) {
-        q = new int*[k + 1];
-        head = *q;
-        q[k] = head;
-        capacity = k;
+        arr.resize(k);
+        front = 0;
+        rear = -1;
+        count = 0;
+        size = k;
     }
 
     bool enQueue(int value) {
         if (this->isFull()) {
             return false;
         }
-
+        rear = (rear + 1) % size;
+        arr[rear] = value;
+        count++;
         return true;
     }
 
     bool deQueue() {
-        if (this->isEmpty()) {
+        if (isEmpty()) {
             return false;
         }
+        front = (front + 1) % size;
+        count--;
+        return true;
     }
 
     int Front() {
-        if (this->isEmpty()) {
+        if (isEmpty()) {
             return -1;
         }
-        return *head;
+        return arr[front];
     }
 
     int Rear() {
-        if (this->isEmpty()) {
+        if (isEmpty()) {
             return -1;
         }
-        return *q[capacity - 1];
+        return arr[rear];
     }
 
     bool isEmpty() {
-        for (int i = 0; i < capacity; i++) {
-            if (*q[i]) {
-                return false;
-            }
-        }
-        return true;
+        return count == 0;
     }
 
     bool isFull() {
-        for (int i = 0; i < capacity; i++) {
-            if (!*q[i]) {
-                return false;
-            }
-        }
-        return true;
+        return count == size;
     }
+
 private:
-    int** q;
-    int* head;
-    int capacity;
+    vector<int> arr;
+    int front, rear, size, count;
 };
 
 /**
