@@ -37,12 +37,12 @@ add_executable(Stack Stack/main.cpp
 add_executable(Queue Queue/main.cpp
         "Queue/622 - Design Circular Queue/Solution.h"
         "Queue/641 - Design Circular Deque/Solution.h")
-add_executable(Array Array/main.cpp
-        "Array/733 - Flood Fill/Solution.h"
-        "Array/463 - Island Perimeter/Solution.h"
-        "Array/200 - Number of Islands/Solution.h"
-        "Array/542 - 01 Matrix/Solution.h"
-        Array/PrintMatrix.h
-        "Array/130 - Surrounded Regions/Solution.h"
-        "Array/1254 - Number of Closed Islands/Solution.h"
-        "Array/1020 - Number of Enclaves/Solution.h")
+add_executable(Array "Breadth-First Search/main.cpp"
+        "Breadth-First Search/733 - Flood Fill/Solution.h"
+        "Breadth-First Search/463 - Island Perimeter/Solution.h"
+        "Breadth-First Search/200 - Number of Islands/Solution.h"
+        "Breadth-First Search/542 - 01 Matrix/Solution.h"
+        "Breadth-First Search/PrintMatrix.h"
+        "Breadth-First Search/130 - Surrounded Regions/Solution.h"
+        "Breadth-First Search/1254 - Number of Closed Islands/Solution.h"
+        "Breadth-First Search/1020 - Number of Enclaves/Solution.h")
