@@ -35,7 +35,8 @@ add_executable(Stack Stack/main.cpp
         "Stack/3174 - Clear Digits/Solution.h"
 )
 add_executable(Queue Queue/main.cpp
-        "Queue/622 - Design Circular Queue/Solution.h")
+        "Queue/622 - Design Circular Queue/Solution.h"
+        "Queue/641 - Design Circular Deque/Solution.h")
 add_executable(Array Array/main.cpp
         "Array/733 - Flood Fill/Solution.h"
         "Array/463 - Island Perimeter/Solution.h"
