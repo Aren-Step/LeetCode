@@ -28,7 +28,6 @@ public:
                 }
             }
         }
-        PrintMatrix(distance);
         int dir_i[] = {-1, 0, 1, 0};
         int dir_j[] = {0, 1, 0, -1};
         while (!q.empty()) {
@@ -43,7 +42,6 @@ public:
                 if (nb_i >= 0 && nb_i < n && nb_j >= 0 && nb_j < m && distance[nb_i][nb_j] == -1) {
                     distance[nb_i][nb_j] = d + 1;
                     q.push({nb_i, nb_j});
-                    PrintMatrix(distance);
                 }
             }
         }

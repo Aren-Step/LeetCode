@@ -11,10 +11,11 @@ using namespace std;
 
 int main() {
     vector<vector<int>> matrix = {
-        {0, 0, 1, 0},
-        {1, 1, 0, 0},
-        {1, 1, 1, 1},
-        {1, 0, 0, 1}
+        {1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1},
+        {1, 1, 0, 1, 1},
+        {1, 1, 1, 1, 1},
+        {1, 1, 1, 1, 1}
     };
 
     vector<vector<int>> result = Solution::updateMatrix(matrix);
