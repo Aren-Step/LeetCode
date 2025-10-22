@@ -12,13 +12,18 @@ using namespace std;
 class Solution {
 public:
     static vector<int> dailyTemperatures(vector<int>& temperatures) {
-        stack<int> t;
-        int n = temperatures.size();
-        vector<int> result(n, 0);
-        for (int i = 1; i < n; i++) {
+        stack<int> st;
+        vector<int> result(temperatures.size(), 0);
 
+        for (int i = 0; i < temperatures.size(); i++) {
+            while (!st.empty() && temperatures[i] > temperatures[st.top()]) {
+                int index = st.top();
+                st.pop();
+                result[index] = i - index;
+            }
+            st.push(i);
         }
-
+        return result;
     }
 };
 
