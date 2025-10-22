@@ -11,7 +11,7 @@ using namespace std;
 
 class Solution {
 public:
-    int timeRequiredToBut(vector<int>& tickets, int k) {
+    int timeRequiredToBuy(vector<int>& tickets, int k) {
         queue<pair<int, int>> q;
         for (int i = 0; i < tickets.size(); i++) {
             q.push({i, tickets[i]});
