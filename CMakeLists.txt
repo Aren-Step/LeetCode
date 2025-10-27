@@ -38,7 +38,8 @@ add_executable(Queue Queue/main.cpp
         "Queue/622 - Design Circular Queue/Solution.h"
         "Queue/641 - Design Circular Deque/Solution.h"
         "Queue/2073 - Time Needed to Buy Tickets/Solution.h"
-        "Queue/1700 - Number of Students Unable to Eat Lunch/Solution.h")
+        "Queue/1700 - Number of Students Unable to Eat Lunch/Solution.h"
+)
 add_executable(Array "Breadth-First Search/main.cpp"
         "Breadth-First Search/733 - Flood Fill/Solution.h"
         "Breadth-First Search/463 - Island Perimeter/Solution.h"
@@ -47,4 +48,5 @@ add_executable(Array "Breadth-First Search/main.cpp"
         "Breadth-First Search/PrintMatrix.h"
         "Breadth-First Search/130 - Surrounded Regions/Solution.h"
         "Breadth-First Search/1254 - Number of Closed Islands/Solution.h"
-        "Breadth-First Search/1020 - Number of Enclaves/Solution.h")
+        "Breadth-First Search/1020 - Number of Enclaves/Solution.h"
+)
